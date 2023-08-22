@@ -1,4 +1,4 @@
-#include "main.h"
+ #include "main.h"
 
 void print_buffer(char buffer[], int *buff_ind);
 
@@ -16,7 +16,9 @@ int _printf(const char *format, ...)
 
 	if (format == NULL)
 		return (-1);
-
+/**
+* if else statement
+*/
 	va_start(list, format);
 
 	for (i = 0; format && format[i] != '\0'; i++)
